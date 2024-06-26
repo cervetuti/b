@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Electrodomésticos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tienda de Electrodomésticos</h1>
+    <div id="auth">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <button onclick="register()">Register</button>
+    </div>
+    <div id="store" style="display:none;">
+        <div class="container">
+            <div class="product-list">
+                <h2>Productos</h2>
+                <div id="products"></div>
+            </div>
+            <div class="cart">
+                <h2>Carrito</h2>
+                <div id="cart-items">
+                    <p>El carrito está vacío.</p>
+                </div>
+                <div id="total-price">
+                    <p>Total: $0</p>
+                </div>
+                <button onclick="checkout()">Procesar Pedido</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
